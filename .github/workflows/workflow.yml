@@ -1,6 +1,6 @@
 name: CI/CD Pipeline
 on:
-  push:
+  workflow_dispatch::
     branches: [ main ]
 jobs:
   continuous-integration:

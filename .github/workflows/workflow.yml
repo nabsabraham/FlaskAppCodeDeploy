@@ -45,7 +45,7 @@ jobs:
         run: |
           # Assuming the Deployment Group is already setup
           aws deploy create-deployment \
-            --application-name nlptest \
-            --deployment-group-name nlptest \
+            --application-name test \
+            --deployment-group-name testdg \
             --deployment-config-name CodeDeployDefault.OneAtATime \
             --github-location repository=${{ github.repository }},commitId=${{ github.sha }}
